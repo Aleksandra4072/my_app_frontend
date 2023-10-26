@@ -4,6 +4,14 @@
     margin-left: 20px;
     text-align: justify;
     font-size: 18px;
+    cursor: pointer;
+}
+
+@media only screen and (max-device-width: 1000px) {
+    .cardContainer {
+        width: 35rem;
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -13,8 +21,16 @@
     }
 }
 
+
+
 .img {
     height: 10rem;
+}
+
+@media only screen and (max-device-width: 1000px) {
+    .img {
+        height: 20rem;
+    }    
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -31,6 +47,12 @@
     height: 10rem;
 }
 
+@media only screen and (max-device-width: 1000px) {
+    .content {
+        height: 16rem;
+    }
+}
+
 @media only screen and (max-device-width: 768px) {
     .content {
         height: 20rem;
@@ -43,6 +65,12 @@
     display: flex;
     justify-content: space-between;
     font-size: 15px;
+}
+
+@media only screen and (max-device-width: 1000px) {
+    .cardFooter {
+        font-size: 25px;
+    }
 }
 
 @media only screen and (max-device-width: 768px) {

@@ -12,7 +12,7 @@ export const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" className={styles.headerContainer}>
         <Container>
-          <Navbar.Brand className={styles.brand} href="#">
+          <Navbar.Brand className={styles.brand} href="/">
             My App
           </Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-sm`} />
@@ -22,10 +22,10 @@ export const Header = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link className={styles.menuItem} href="#weather">
+                <Nav.Link className={styles.menuItem} href="/weather">
                   Weather
                 </Nav.Link>
-                <Nav.Link className={styles.menuItem} href="#posts">
+                <Nav.Link className={styles.menuItem} href="/posts">
                   Posts
                 </Nav.Link>
                 <NavDropdown title="My Lybrary" className={styles.menuItem} >

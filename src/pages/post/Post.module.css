@@ -1,0 +1,8 @@
+.centerItems{
+    display: flex;
+    justify-content: center;
+}
+
+.postContainer {
+    margin: 70px 80px 70px 80px;
+}
