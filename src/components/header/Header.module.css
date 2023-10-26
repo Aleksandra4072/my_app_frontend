@@ -1,0 +1,37 @@
+@font-face {
+    font-family: optimal;
+    src: url(../../assets/fonts/Optimal.otf);
+}
+
+.headerContainer {
+    height: 80px;
+    box-shadow: 0 5px 10px #21283226;
+    display: flex;
+    align-items: center;
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand {
+    font-family: optimal;
+    font-weight: 900;
+    text-decoration: none;
+    text-shadow: -4px 3px 0 #256c9e;
+}
+
+.menuTitle {
+    font-family: optimal;
+    font-weight: 900;
+    text-decoration: none;
+    text-shadow: -4px 3px 0 #256c9e;
+}
+
+.menuItem {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
