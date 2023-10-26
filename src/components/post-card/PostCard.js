@@ -1,5 +1,5 @@
 import { Card } from 'react-bootstrap';
-import { contentCut } from '../../utils/axiosUtils';
+import { sliceItem } from '../../utils/generalUtils';
 
 import styles from './PostCard.module.css';
 
@@ -10,7 +10,7 @@ export const PostCard = ({ data }) => {
         <Card.Body>
           <div className={styles.content}>
             <div className={styles.title}>{data.title}</div>
-            <div className='mt-3'>{contentCut(data.content)}</div>
+            <div className='mt-3'>{sliceItem(data.content, 0, 80)}...</div>
           </div>
           <Card.Footer className={styles.cardFooter}>
             <div>{data.creator}</div>
