@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import { Container, Image, Row, Col, Stack } from "react-bootstrap";
-import { getPost } from "../../utils/axiosUtils";
+import { Image, Stack } from "react-bootstrap";
+import { getPost } from "../../utils/postsApi";
 import { useParams } from "react-router-dom";
 
 import styles from "./Post.module.css";
@@ -28,7 +28,13 @@ export const Post = () => {
         >
           {data?.content}
         </Stack>
-        <Stack direction="horizontal" style={{ fontSize: "20px", borderTop: '2px solid  rgb(218, 213, 213)'}}>
+        <Stack
+          direction="horizontal"
+          style={{
+            fontSize: "20px",
+            borderTop: "2px solid  rgb(218, 213, 213)"
+          }}
+        >
           <div>{data?.creator}</div>
           <div className="ms-auto">{data?.creationDate}</div>
         </Stack>
